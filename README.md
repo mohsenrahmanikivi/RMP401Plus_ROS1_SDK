@@ -5,12 +5,7 @@ To build Docker image for Jetson ARM 64 v8, enter the folder of Docker file and 
 ## run the Image
 If your working space is not the same as "/ssd/workspaces/catkin_ws", change it as it is going to be a shared folder witha  container
 ```bash
-docker run -it --rm\
-  --device=/dev/ttyUSB0:/dev/ttyUSB0 \
-  -v "/ssd/workspaces/catkin_ws:/root/catkin_ws \
-  --privileged \
-  --name ros1_container \
-  ros1-melodic-arm64
+docker run -it --rm --device=/dev/ttyUSB0:/dev/ttyUSB0 -v "/ssd/workspaces/catkin_ws:/root/catkin_ws --privileged --name ros1_container ros1-melodic-arm64
 ```
 
 ## attach to active seasion
