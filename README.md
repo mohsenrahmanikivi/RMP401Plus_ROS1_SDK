@@ -16,3 +16,10 @@ If your working space is not the same as "/ssd/workspaces/catkin_ws", change it 
 Find the container ID then attach to it
 - <code>docker ps </code>
 - <code>docker exec -it <container_id_or_name> /bin/bash </code>
+
+## stop and remove process (containers)
+list
+- <code>docker ps -a </code>
+stop and remove
+- <code>docker ps -q | xargs -r docker stop | xargs -r docker rm </code>
+
