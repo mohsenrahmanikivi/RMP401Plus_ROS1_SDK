@@ -4,6 +4,13 @@ FROM arm64v8/ros:melodic
 # Set environment for non-interactive apt installs
 ENV DEBIAN_FRONTEND=noninteractive
 
+# Install the missed tools
+RUN apt-get update && apt-get install -y \
+    iproute2 \
+    busybox \
+    kmod \
+    udev
+
 # Install essential build tools and ROS tf package
 RUN apt-get update && apt-get install -y --no-install-recommends \
     build-essential \
