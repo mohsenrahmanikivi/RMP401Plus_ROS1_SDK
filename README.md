@@ -1,9 +1,9 @@
 ## Docker file
-to build docker image for jetson arm 64 v8 , enter to the folder of docker file and run
+To build Docker image for Jetson ARM 64 v8, enter the folder of Docker file and run
 - <code>docker build -t ros1-melodic-arm64 .</code>
 
 ## run the Image
-if your working space is not the same as "/ssd/workspaces/catkin_ws" change it as it is goinf to be shared folde with container
+If your working space is not the same as "/ssd/workspaces/catkin_ws", change it as it is going to be a shared folder witha  container
 - <code>docker run -it --rm\
   --device=/dev/ttyUSB0:/dev/ttyUSB0 \
   -v "/ssd/workspaces/catkin_ws:/root/catkin_ws
@@ -12,7 +12,7 @@ if your working space is not the same as "/ssd/workspaces/catkin_ws" change it a
   ros1-melodic-arm64</code>
 
 
-## attache to active seasion
-Find container id then attache to it
+## attach to active seasion
+Find the container ID then attach to it
 - <code>docker ps </code>
 - <code>docker exec -it <container_id_or_name> /bin/bash </code>
