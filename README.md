@@ -10,7 +10,7 @@ docker run -it --rm\
   -v "/ssd/workspaces/catkin_ws:/root/catkin_ws \
   --privileged \
   --name ros1_container \
-  ros1-melodic-arm64</code>
+  ros1-melodic-arm64
 ```
 
 ## attach to active seasion
