@@ -8,8 +8,8 @@ ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && apt-get install -y \
     iproute2 \
     busybox \
-    kmod \
-    udev
+    kmod 
+   
 
 # Install essential build tools and ROS tf package
 RUN apt-get update && apt-get install -y --no-install-recommends \
