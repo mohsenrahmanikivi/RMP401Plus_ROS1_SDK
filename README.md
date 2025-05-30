@@ -9,6 +9,7 @@ docker run -it --rm \
   --device=/dev/ttyUSB0:/dev/ttyUSB0 \
   -v "/ssd/workspaces/catkin_ws:/root/catkin_ws" \
   --privileged \
+  --net=host \
   --name ros1_container \
   ros1-melodic-arm64
 ```
