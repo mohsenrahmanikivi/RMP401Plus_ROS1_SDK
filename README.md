@@ -23,5 +23,6 @@ Find the container ID then attach to it
 ## stop and remove process (containers)
 list, Stop and remove
 - <code>docker ps -a </code>
-- <code>docker ps -q | xargs -r docker stop | xargs -r docker rm </code>
+- <code>docker ps -q | xargs -r docker stop && docker ps -a -q | xargs -r docker rm
+ </code>
 
